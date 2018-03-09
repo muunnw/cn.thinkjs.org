@@ -205,7 +205,7 @@ module.exports = [
 
 ### 项目中自定义的中间件
 
-有时候项目中根据一些特定需要添加中间件，那么可以放在 `src/middleware` 目录下，然后就可以直接通过字符串的方式引用了。
+有时候项目中根据一些特定需要添加中间件，那么可以放在 `src/middleware` 目录下（多模块项目放在`src/common/middleware`目录下），然后就可以直接通过字符串的方式引用了。
 
 如：添加了 `src/middleware/csrf.js`，那么就可以直接通过 `csrf` 字符串引用这个中间件。
 
